@@ -27,7 +27,7 @@ function convert (source, options) {
         parser: {
             parse: JSXParser.parse.bind(JSXParser)
         },
-        ecmaVersion: 9
+        ecmaVersion: 13
     }, function (node) {
         if (isNamedDefine(node)) {
             throw new Error('Found a named define - this is not supported.');
